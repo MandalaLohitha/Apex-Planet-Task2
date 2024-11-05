@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;"
+    background-color: #f4f4f4;
+    background: url(' https://c8.alamy.com/comp/K28BAH/fashion-shopping-background-clothes-and-accessories-doodle-hand-drawnvector-K28BAH.jpg');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 200px;
+    align-items: center;
+    padding: 20px;
+}
+
+.shopping-cart {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-gallery img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.checkout-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .checkout-form {
+        width: 100%;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+    }
+}

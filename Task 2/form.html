@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Shopping Cart Section -->
+        <div class="shopping-cart">
+            <h1>SHOPPING STAR</h1>
+            <div class="product-gallery" id="productGallery">
+                <!-- Product Images Will Be Added Here Dynamically -->
+                <img src = "https://www.beyoung.in/mobile/images/locations/Plain-tshirt-mobile-view.jpg"/>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYw-W_SYP268xJkC6jYhs_guj-3ifMvepCyg&s"/>
+                <img src = "https://blog.indifi.com/wp-content/uploads/2019/12/Things-You-Should-Know-as-a-Clothing-or-Fashion-Shop-Owner-405x300.jpg"/>
+                <img src = "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/2/2018/03/15181904/EasyBuy1.jpg?fm=webp&w=750&h=500&dpr=2"/>
+                <img src = "https://images.livemint.com/img/2021/01/05/600x338/LSpic_1609863090729_1609863095926.jpg"/>
+            </div>
+            <button onclick="addProductImage()">Add Product Image</button>
+            <button onclick="removeProductImage()">Remove Product Image</button>
+        </div>
+
+        <!-- Checkout Form Section -->
+        <div class="checkout-form">
+            <h3>Checkout Form</h3>
+            <form id="checkoutForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <span id="emailError" style="color: red; display: none;">Invalid email address!</span><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
